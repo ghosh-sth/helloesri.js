@@ -31,6 +31,12 @@
             const map = new Map({
                 basemap: "arcgis/topographic"
             });
+            const view = new MapView({
+                map: map,
+                center: [0,0],
+                zoom: 13,
+                container: "viewDiv"
+            });
         });
     </script>
 
