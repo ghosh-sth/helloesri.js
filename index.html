@@ -21,20 +21,20 @@
       }
     </style>
     
-    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/dark/main.css">
    
     <script src="https://js.arcgis.com/4.29/"></script>
     
     <script>
-        require(["esri/config","esri/Map","esri/views/MapView"], function(esriConfig,Map,MapView){
+        require(["esri/config","esri/Map","esri/views/MapView"], function(esriConfig,Map,MapView) {
             esriConfig.apiKey = "AAPKc7aaaa75c93648dfa8549f3f1a178f028HYltwEBVuXG_yIKyAFwQounw95_IRClbYiVn8dnai2vf1safpO1h1WXLguaj72r";
             const map = new Map({
                 basemap: "arcgis/topographic"
             });
             const view = new MapView({
                 map: map,
-                center: [-118.805, 34.027],
-                zoom: 13,
+                center: [-118.805,34.027],
+                zoom: 0,
                 container: "viewDiv"
             });
         });
@@ -43,9 +43,7 @@
   </head>
 
   <body>
-
     <div id="viewDiv"></div>
-
   </body>
 
 </html>
