@@ -6,7 +6,7 @@
 
     <meta charset="utf-8" />
 
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="initial-scale=0.8, maximum-scale=1, user-scalable=no" />
     
     <title>Displaying a map</title>
     
@@ -16,8 +16,8 @@
       #viewDiv {
         padding: 0;
         margin: 0;
-        height: 100%;
-        width: 100%;
+        height: 80%;
+        width: 80%;
       }
     </style>
     
@@ -34,7 +34,7 @@
             const view = new MapView({
                 map: map,
                 center: [-118.805,34.027],
-                zoom: 0,
+                zoom: 13,
                 container: "viewDiv"
             });
         });
